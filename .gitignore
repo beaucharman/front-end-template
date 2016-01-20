@@ -3,4 +3,4 @@
 npm-debug.log
 
 # folders
-/node_modules/
+node_modules/
