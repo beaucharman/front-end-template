@@ -4,7 +4,7 @@ import styles from './styles.styl'
 
 class Content extends Component {
   render() {
-    const { children } = this.props;
+    const { children } = this.props
     return (
       <div className={styles.content}>
         {children}

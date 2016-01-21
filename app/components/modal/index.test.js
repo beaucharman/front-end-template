@@ -1,3 +1,3 @@
-describe('component:modal', function desc() { 
-
+describe('component:modal', function desc() {
+  it('should load the Modal component')
 })

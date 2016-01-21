@@ -4,8 +4,9 @@
   "description": "A front end template build with React, Stylus, Webpack and Babel",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --harmony",
+    "test": "mocha --harmony ./**/index.test.js",
     "start": "node --harmony server.js",
+    "lint": "eslint -c .eslintrc --ext .js,.jsx app",
     "build": "webpack",
     "dev": "webpack -w"
   },
@@ -22,6 +23,7 @@
     "babel-core": "^6.4.5",
     "babel-eslint": "^4.1.6",
     "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "mocha": "^2.3.4",
