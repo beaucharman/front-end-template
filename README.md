@@ -45,8 +45,8 @@ Stylistically and content contrasting component.
 
 ### Development tools
 
-React
-Webpack
+React,
+Webpack,
 Stylus
 
 ### Linting
@@ -59,7 +59,7 @@ Each component will have an associated test.js file, for example `app/components
 The testing framework is to be Mocha, using an assertion library (`assert` is fine)
 
 **Notes:**
-+ A correct, thought out project and tooling setup is priceless 
++ A correct, thought out project and tooling setup is priceless
 + Development browser: Chrome Version 47.0.2526.106
 
 **Accessibility concerns**
