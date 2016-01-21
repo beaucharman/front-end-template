@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 
+import placeholder from './image/placeholder.png'
+
 class Carousel extends Component {
   render() {
     return (
       <figure>
-        <h1>Carousel Placeholder</h1>
+        <img src={placeholder} />
       </figure>
     )
   }
