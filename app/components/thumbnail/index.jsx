@@ -7,8 +7,10 @@ class Thumbnail extends Component {
     const { image, heading, subHeading } = this.props
     return (
       <figure className={styles.thumbnail}>
-        <span>{heading}</span>
-        <figcaption>{subHeading}</figcaption>
+        <figcaption>
+          <div className={styles.heading}>{heading}</div>
+          <div className={styles.subHeading}>{subHeading}</div>
+        </figcaption>
       </figure>
     )
   }
