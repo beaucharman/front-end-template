@@ -1,25 +1,59 @@
-.app-components-caption-styles---caption---2Gp7f {
-  color: #f00;
-  line-height: 1.4;
-  -webkit-transform: rotate(34deg);
-  -moz-transform: rotate(34deg);
-  -o-transform: rotate(34deg);
-  -ms-transform: rotate(34deg);
-  transform: rotate(34deg);
+.app-components-caption---styles---caption---2Gp7f {
+  border-top: 1px solid #fff;
+  text-align: right;
 }
-.app-templates-home-styles---wrapper---2wZdO {
-  max-width: 980px;
+.app-components-caption---styles---heading---1DLRf {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.app-components-caption---styles---copy---7Rv3Y {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #666;
+}
+.app-components-thumbnail---styles---thumbnail---T7fwS {
+  text-align: center;
+}
+.app-components-thumbnail---styles---heading---1FWxw {
+  color: inherit;
+  margin-bottom: 4px;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.app-components-thumbnail---styles---subHeading---Lrc-8 {
+  color: #666;
+  font-size: 0.8em;
+}
+.app-compositions-home---styles---wrapper---2PKPB {
+  max-width: 1024px;
+  min-width: 320px;
   margin: 0 auto;
 }
-.app-templates-home-styles---centeredText---yMB8i {
+.app-compositions-home---styles---centeredText---14-Xv {
   text-align: center;
+}
+html {
+  font-size: 16px;
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 20px;
+  }
 }
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-variant: normal;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.4;
   color: #fff;
   background-color: #000;
@@ -28,7 +62,17 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Arial Black', Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+p,
+ul,
+ol,
+li {
+  font-size: 1em;
 }

@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -54,14 +54,24 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _index = __webpack_require__(159);
+	var _index = __webpack_require__(160);
 
 	var _index2 = _interopRequireDefault(_index);
 
+	__webpack_require__(171);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	console.log('Application', _index2.default);
-	_reactDom2.default.render(_react2.default.createElement(_index2.default, null), document.getElementById('app'));
+	var Application = function Application() {
+	  //@TODO set up react routing here to avoid static component pacement
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(_index2.default, null)
+	  );
+	};
+
+	_reactDom2.default.render(_react2.default.createElement(Application, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -14616,7 +14626,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -19659,63 +19669,7 @@
 
 
 /***/ },
-/* 159 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _index = __webpack_require__(160);
-
-	var _index2 = _interopRequireDefault(_index);
-
-	__webpack_require__(168);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Application = function (_Component) {
-	  _inherits(Application, _Component);
-
-	  function Application() {
-	    _classCallCheck(this, Application);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Application).apply(this, arguments));
-	  }
-
-	  _createClass(Application, [{
-	    key: 'render',
-
-	    //@TODO set up react routing here to avoid static component pacement
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_index2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return Application;
-	}(_react.Component);
-
-	exports.default = Application;
-
-/***/ },
+/* 159 */,
 /* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -19743,7 +19697,15 @@
 
 	var _index6 = _interopRequireDefault(_index5);
 
-	var _styles = __webpack_require__(167);
+	var _constants = __webpack_require__(167);
+
+	var _constants2 = _interopRequireDefault(_constants);
+
+	var _data = __webpack_require__(168);
+
+	var _data2 = _interopRequireDefault(_data);
+
+	var _styles = __webpack_require__(169);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -19769,7 +19731,12 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'main',
-	        { 'class': _styles2.default.wrapper },
+	        { className: _styles2.default.wrapper },
+	        _react2.default.createElement(
+	          'header',
+	          null,
+	          _constants2.default.PROJECT_NAME
+	        ),
 	        _react2.default.createElement(_index4.default, null),
 	        _react2.default.createElement(
 	          'section',
@@ -19777,7 +19744,7 @@
 	          _react2.default.createElement(
 	            'h1',
 	            null,
-	            'Project Name'
+	            _constants2.default.PROJECT_NAME
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -19790,7 +19757,16 @@
 	          { heading: 'Image Caption' },
 	          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam he'
 	        ),
-	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet , consectetur adipiscing elit  . Nam' })
+	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' }),
+	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(
+	          'footer',
+	          null,
+	          '© Beau Charman ',
+	          _constants2.default.CURRENT_YEAR
+	        )
 	      );
 	    }
 	  }]);
@@ -19849,10 +19825,14 @@
 	        { className: _styles2.default.caption },
 	        _react2.default.createElement(
 	          'h4',
-	          null,
+	          { className: _styles2.default.heading },
 	          heading
 	        ),
-	        children
+	        _react2.default.createElement(
+	          'div',
+	          { className: _styles2.default.copy },
+	          children
+	        )
 	      );
 	    }
 	  }]);
@@ -19872,7 +19852,7 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"caption":"app-components-caption-styles---caption---2Gp7f"};
+	module.exports = {"caption":"app-components-caption---styles---caption---2Gp7f","heading":"app-components-caption---styles---heading---1DLRf","copy":"app-components-caption---styles---copy---7Rv3Y"};
 
 /***/ },
 /* 163 */
@@ -19931,7 +19911,7 @@
 /* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "7a2acb7cacb769c2e779ff8a6cf30a9e.jpg";
+	module.exports = __webpack_require__.p + "placeholder.png";
 
 /***/ },
 /* 165 */
@@ -19982,14 +19962,18 @@
 	        'figure',
 	        { className: _styles2.default.thumbnail },
 	        _react2.default.createElement(
-	          'span',
-	          null,
-	          heading
-	        ),
-	        _react2.default.createElement(
 	          'figcaption',
 	          null,
-	          subHeading
+	          _react2.default.createElement(
+	            'div',
+	            { className: _styles2.default.heading },
+	            heading
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: _styles2.default.subHeading },
+	            subHeading
+	          )
 	        )
 	      );
 	    }
@@ -20011,16 +19995,43 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+	module.exports = {"thumbnail":"app-components-thumbnail---styles---thumbnail---T7fwS","heading":"app-components-thumbnail---styles---heading---1FWxw","subHeading":"app-components-thumbnail---styles---subHeading---Lrc-8"};
 
 /***/ },
 /* 167 */
 /***/ function(module, exports) {
 
-	// removed by extract-text-webpack-plugin
-	module.exports = {"wrapper":"app-templates-home-styles---wrapper---2wZdO","centeredText":"app-templates-home-styles---centeredText---yMB8i"};
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  PROJECT_NAME: 'Project Name',
+	  CURRENT_YEAR: '2016'
+	};
 
 /***/ },
 /* 168 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {};
+
+/***/ },
+/* 169 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"wrapper":"app-compositions-home---styles---wrapper---2PKPB","centeredText":"app-compositions-home---styles---centeredText---14-Xv"};
+
+/***/ },
+/* 170 */,
+/* 171 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
