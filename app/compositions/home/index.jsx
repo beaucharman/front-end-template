@@ -5,7 +5,7 @@ import Carousel from '../../components/carousel/index.jsx'
 import Content from '../../components/content/index.jsx'
 import Thumbnail from '../../components/thumbnail/index.jsx'
 import Grid from '../../components/grid/index.jsx'
-const { Wrapper } = Grid
+const { Column, Container, Row } = Grid
 
 import constants from '../../constants.js'
 import data from './data.js'
@@ -14,7 +14,12 @@ import globalStyles from '../../global/styles.styl'
 export default class HomeTemplate extends Component {
   render() {
     return (
-      <Wrapper>
+      <Container>
+        <Row>
+          <Column>
+            Column One!
+          </Column>
+        </Row>
         <header>
           {constants.PROJECT_NAME}
         </header>
@@ -38,7 +43,7 @@ export default class HomeTemplate extends Component {
         <footer className={globalStyles.footer}>
           &copy; Beau Charman {constants.CURRENT_YEAR}
         </footer>
-      </Wrapper>
+      </Container>
     )
   }
 }

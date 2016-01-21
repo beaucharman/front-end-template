@@ -1,6 +1,10 @@
 // @TODO Finish grid off, inluce Row and Col compoments
-import Wrapper from './wrapper/index.jsx'
+import Column from './components/column/index.jsx'
+import Container from './components/container/index.jsx'
+import Row from './components/row/index.jsx'
 
 export default {
-  Wrapper,
+  Column,
+  Container,
+  Row,
 }

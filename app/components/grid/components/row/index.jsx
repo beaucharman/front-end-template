@@ -2,19 +2,19 @@ import React, { Component, PropTypes } from 'react'
 
 import styles from './styles.styl'
 
-class Wrapper extends Component {
+class Row extends Component {
   render() {
     const { children } = this.props
     return (
-      <div className={styles.wrapper}>
+      <div className={styles.row}>
         {children}
       </div>
     )
   }
 }
 
-Wrapper.propTypes = {
+Row.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Wrapper
+export default Row

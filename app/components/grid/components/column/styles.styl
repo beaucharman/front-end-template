@@ -1,0 +1,21 @@
+@import '../../variables.styl'
+@import '../../mixins.styl'
+
+.column
+  float left
+  width 100%
+  min-height 1px // Prevent columns from collapsing when empty
+  padding-left $grid-column-padding // Set inner padding as gutters instead of margin
+  padding-right $grid-column-padding
+
+/* Keep semeantic markup but flip the visual order of columns */
+.reverseFlow
+  float right
+
+/* ... and flip back any child columns */
+.normalFlow
+  float left
+
+.flush
+	padding-left 0
+	padding-right 0
