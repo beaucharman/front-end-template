@@ -2,26 +2,29 @@ import React, { Component } from 'react'
 
 import Caption from '../../components/caption/index.jsx'
 import Carousel from '../../components/carousel/index.jsx'
+import Content from '../../components/content/index.jsx'
 import Thumbnail from '../../components/thumbnail/index.jsx'
+import Grid from '../../components/grid/index.jsx'
+const { Wrapper } = Grid
 
 import constants from '../../constants.js'
 import data from './data.js'
-import styles from './styles.styl'
+import globalStyles from '../../global/styles.styl'
 
 export default class HomeTemplate extends Component {
   render() {
     return (
-      <main className={styles.wrapper}>
+      <Wrapper>
         <header>
           {constants.PROJECT_NAME}
         </header>
 
         <Carousel />
 
-        <section className={styles.centeredText}>
+        <Content>
           <h1>{constants.PROJECT_NAME}</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam he</p>
-        </section>
+        </Content>
 
         <Caption heading="Image Caption">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam he
@@ -32,10 +35,10 @@ export default class HomeTemplate extends Component {
         <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit amet" />
         <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit amet" />
 
-        <footer>
+        <footer className={globalStyles.footer}>
           &copy; Beau Charman {constants.CURRENT_YEAR}
         </footer>
-      </main>
+      </Wrapper>
     )
   }
 }

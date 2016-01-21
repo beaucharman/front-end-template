@@ -19693,9 +19693,17 @@
 
 	var _index4 = _interopRequireDefault(_index3);
 
-	var _index5 = __webpack_require__(165);
+	var _index5 = __webpack_require__(172);
 
 	var _index6 = _interopRequireDefault(_index5);
+
+	var _index7 = __webpack_require__(165);
+
+	var _index8 = _interopRequireDefault(_index7);
+
+	var _index9 = __webpack_require__(174);
+
+	var _index10 = _interopRequireDefault(_index9);
 
 	var _constants = __webpack_require__(167);
 
@@ -19705,7 +19713,7 @@
 
 	var _data2 = _interopRequireDefault(_data);
 
-	var _styles = __webpack_require__(169);
+	var _styles = __webpack_require__(171);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -19716,6 +19724,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Wrapper = _index10.default.Wrapper;
 
 	var HomeTemplate = function (_Component) {
 	  _inherits(HomeTemplate, _Component);
@@ -19730,8 +19740,8 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'main',
-	        { className: _styles2.default.wrapper },
+	        Wrapper,
+	        null,
 	        _react2.default.createElement(
 	          'header',
 	          null,
@@ -19739,8 +19749,8 @@
 	        ),
 	        _react2.default.createElement(_index4.default, null),
 	        _react2.default.createElement(
-	          'section',
-	          { className: _styles2.default.centeredText },
+	          _index6.default,
+	          null,
 	          _react2.default.createElement(
 	            'h1',
 	            null,
@@ -19757,13 +19767,13 @@
 	          { heading: 'Image Caption' },
 	          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam he'
 	        ),
-	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' }),
-	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
-	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
-	        _react2.default.createElement(_index6.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' }),
+	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
 	        _react2.default.createElement(
 	          'footer',
-	          null,
+	          { className: _styles2.default.footer },
 	          '© Beau Charman ',
 	          _constants2.default.CURRENT_YEAR
 	        )
@@ -20023,18 +20033,165 @@
 	exports.default = {};
 
 /***/ },
-/* 169 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"wrapper":"app-compositions-home---styles---wrapper---2PKPB","centeredText":"app-compositions-home---styles---centeredText---14-Xv"};
-
-/***/ },
+/* 169 */,
 /* 170 */,
 /* 171 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+	module.exports = {"footer":"app-global---styles---footer---3Bohh"};
+
+/***/ },
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _styles = __webpack_require__(173);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Content = function (_Component) {
+	  _inherits(Content, _Component);
+
+	  function Content() {
+	    _classCallCheck(this, Content);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Content).apply(this, arguments));
+	  }
+
+	  _createClass(Content, [{
+	    key: 'render',
+	    value: function render() {
+	      var children = this.props.children;
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _styles2.default.content },
+	        children
+	      );
+	    }
+	  }]);
+
+	  return Content;
+	}(_react.Component);
+
+	Content.propTypes = {
+	  children: _react.PropTypes.node.isRequired
+	};
+
+	exports.default = Content;
+
+/***/ },
+/* 173 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"content":"app-components-content---styles---content---Qr6Rf"};
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _index = __webpack_require__(175);
+
+	var _index2 = _interopRequireDefault(_index);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	  Wrapper: _index2.default
+	}; // @TODO Finish grid off, inluce Row and Col compoments
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _styles = __webpack_require__(176);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Wrapper = function (_Component) {
+	  _inherits(Wrapper, _Component);
+
+	  function Wrapper() {
+	    _classCallCheck(this, Wrapper);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Wrapper).apply(this, arguments));
+	  }
+
+	  _createClass(Wrapper, [{
+	    key: 'render',
+	    value: function render() {
+	      var children = this.props.children;
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: _styles2.default.wrapper },
+	        children
+	      );
+	    }
+	  }]);
+
+	  return Wrapper;
+	}(_react.Component);
+
+	Wrapper.propTypes = {
+	  children: _react.PropTypes.node.isRequired
+	};
+
+	exports.default = Wrapper;
+
+/***/ },
+/* 176 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"wrapper":"app-components-grid-wrapper---styles---wrapper---37sn0"};
 
 /***/ }
 /******/ ]);
