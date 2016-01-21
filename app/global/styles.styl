@@ -1,14 +1,28 @@
+html
+  font-size 16px
+  +above(400px)
+    font-size 18px
+  +above(800px)
+    font-size 20px
+
 body
   font-family 'Helvetica Neue', Helvetica, sans-serif;
-  font-size 16px
+  font-size 1em
   font-style normal
   font-variant normal
-  font-weight 200
+  font-weight 400
   line-height 1.4
   color white
   background-color black
 
 h1, h2, h3, h4
-  font-family 'Arial Black', Arial, sans-serif
   text-transform uppercase
   letter-spacing 2px
+
+img
+  display inline-block
+  max-width 100%
+  height auto
+
+p, ul, ol, li
+  font-size 1em

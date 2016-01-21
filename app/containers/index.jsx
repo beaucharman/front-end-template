@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HomeTemplate from '../templates/home/index.jsx'
+import HomeTemplate from '../compositions/home/index.jsx'
 import './styles.styl'
 
 export default class Application extends Component {

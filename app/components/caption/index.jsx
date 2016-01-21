@@ -7,8 +7,8 @@ class Caption extends Component {
     const { children, heading } = this.props
     return (
       <div className={styles.caption}>
-        <h4>{heading}</h4>
-        {children}
+        <h4 className={styles.heading}>{heading}</h4>
+        <div className={styles.copy}>{children}</div>
       </div>
     )
   }
