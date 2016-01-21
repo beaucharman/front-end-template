@@ -34,6 +34,7 @@
   font-size: 0.8em;
 }
 .app-components-grid-components-column-styles---column---2MAwf {
+  position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -51,6 +52,21 @@
 .app-components-grid-components-column-styles---flush---1QJp0 {
   padding-left: 0;
   padding-right: 0;
+}
+@media screen and (min-width: 680px) {
+  .app-components-grid-components-column-styles---column4---VgtJ3 {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .app-components-grid-components-column-styles---column2---V9PNm {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 680px) {
+  .app-components-grid-components-column-styles---column3---3dP71 {
+    width: 33.33333333333333%;
+  }
 }
 .app-components-grid-components-container-styles---container---1Jt9D {
   margin: 0 auto;

@@ -15,11 +15,6 @@ export default class HomeTemplate extends Component {
   render() {
     return (
       <Container>
-        <Row>
-          <Column>
-            Column One!
-          </Column>
-        </Row>
         <header>
           {constants.PROJECT_NAME}
         </header>
@@ -35,11 +30,21 @@ export default class HomeTemplate extends Component {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam he
         </Caption>
 
-        <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit ame" />
-        <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit amet" />
-        <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit amet" />
-        <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit amet" />
-
+        <Row>
+          <Column pattern={4}>
+            <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit ame" />
+          </Column>
+          <Column pattern={4}>
+            <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit ame" />
+          </Column>
+          <Column pattern={4}>
+            <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit ame" />
+          </Column>
+          <Column pattern={4}>
+            <Thumbnail image="thisimage" heading="Project name" subHeading="Lorem ipsum dolor sit ame" />
+          </Column>
+        </Row>
+        
         <footer className={globalStyles.footer}>
           &copy; Beau Charman {constants.CURRENT_YEAR}
         </footer>

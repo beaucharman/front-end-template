@@ -58,7 +58,7 @@
 
 	var _index2 = _interopRequireDefault(_index);
 
-	__webpack_require__(177);
+	__webpack_require__(178);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19704,15 +19704,15 @@
 
 	var _index10 = _interopRequireDefault(_index9);
 
-	var _constants = __webpack_require__(175);
+	var _constants = __webpack_require__(176);
 
 	var _constants2 = _interopRequireDefault(_constants);
 
-	var _data = __webpack_require__(176);
+	var _data = __webpack_require__(177);
 
 	var _data2 = _interopRequireDefault(_data);
 
-	var _styles = __webpack_require__(177);
+	var _styles = __webpack_require__(178);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -19744,15 +19744,6 @@
 	        Container,
 	        null,
 	        _react2.default.createElement(
-	          Row,
-	          null,
-	          _react2.default.createElement(
-	            Column,
-	            null,
-	            'Column One!'
-	          )
-	        ),
-	        _react2.default.createElement(
 	          'header',
 	          null,
 	          _constants2.default.PROJECT_NAME
@@ -19777,10 +19768,30 @@
 	          { heading: 'Image Caption' },
 	          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam he'
 	        ),
-	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' }),
-	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
-	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
-	        _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit amet' }),
+	        _react2.default.createElement(
+	          Row,
+	          null,
+	          _react2.default.createElement(
+	            Column,
+	            { pattern: 4 },
+	            _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' })
+	          ),
+	          _react2.default.createElement(
+	            Column,
+	            { pattern: 4 },
+	            _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' })
+	          ),
+	          _react2.default.createElement(
+	            Column,
+	            { pattern: 4 },
+	            _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' })
+	          ),
+	          _react2.default.createElement(
+	            Column,
+	            { pattern: 4 },
+	            _react2.default.createElement(_index8.default, { image: 'thisimage', heading: 'Project name', subHeading: 'Lorem ipsum dolor sit ame' })
+	          )
+	        ),
 	        _react2.default.createElement(
 	          'footer',
 	          { className: _styles2.default.footer },
@@ -19931,7 +19942,7 @@
 /* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "placeholder.png";
+	module.exports = __webpack_require__.p + "assets/images/placeholder.png?196b141f6477d92d28a9bcaa584ba0b2";
 
 /***/ },
 /* 164 */
@@ -20097,11 +20108,11 @@
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _index3 = __webpack_require__(171);
+	var _index3 = __webpack_require__(172);
 
 	var _index4 = _interopRequireDefault(_index3);
 
-	var _index5 = __webpack_require__(173);
+	var _index5 = __webpack_require__(174);
 
 	var _index6 = _interopRequireDefault(_index5);
 
@@ -20129,7 +20140,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _styles = __webpack_require__(170);
+	var _classnames = __webpack_require__(170);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	var _styles = __webpack_require__(171);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -20153,11 +20168,15 @@
 	  _createClass(Column, [{
 	    key: 'render',
 	    value: function render() {
-	      var children = this.props.children;
+	      var _props = this.props;
+	      var children = _props.children;
+	      var pattern = _props.pattern;
+
+	      var className = (0, _classnames2.default)(_styles2.default.column, _styles2.default['column' + pattern]);
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: _styles2.default.column },
+	        { className: className },
 	        children
 	      );
 	    }
@@ -20167,20 +20186,75 @@
 	}(_react.Component);
 
 	Column.propTypes = {
-	  children: _react.PropTypes.node
+	  children: _react.PropTypes.node,
+	  pattern: _react.PropTypes.number
 	};
 
 	exports.default = Column;
 
 /***/ },
 /* 170 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
-	module.exports = {"column":"app-components-grid-components-column-styles---column---2MAwf","reverseFlow":"app-components-grid-components-column-styles---reverseFlow---2HJ4k","normalFlow":"app-components-grid-components-column-styles---normalFlow---jr0hJ","flush":"app-components-grid-components-column-styles---flush---1QJp0"};
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = [];
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+
+			return classes.join(' ');
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
 
 /***/ },
 /* 171 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"column":"app-components-grid-components-column-styles---column---2MAwf","reverseFlow":"app-components-grid-components-column-styles---reverseFlow---2HJ4k","normalFlow":"app-components-grid-components-column-styles---normalFlow---jr0hJ","flush":"app-components-grid-components-column-styles---flush---1QJp0","column4":"app-components-grid-components-column-styles---column4---VgtJ3","column2":"app-components-grid-components-column-styles---column2---V9PNm","column3":"app-components-grid-components-column-styles---column3---3dP71"};
+
+/***/ },
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20195,7 +20269,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _styles = __webpack_require__(172);
+	var _styles = __webpack_require__(173);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -20239,14 +20313,14 @@
 	exports.default = Container;
 
 /***/ },
-/* 172 */
+/* 173 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"container":"app-components-grid-components-container-styles---container---1Jt9D","flush":"app-components-grid-components-container-styles---flush---1WHpJ"};
 
 /***/ },
-/* 173 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -20261,7 +20335,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _styles = __webpack_require__(174);
+	var _styles = __webpack_require__(175);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -20305,14 +20379,14 @@
 	exports.default = Row;
 
 /***/ },
-/* 174 */
+/* 175 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"row":"app-components-grid-components-row-styles---row---1cKVk","flush":"app-components-grid-components-row-styles---flush---1pdQV"};
 
 /***/ },
-/* 175 */
+/* 176 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -20326,7 +20400,7 @@
 	};
 
 /***/ },
-/* 176 */
+/* 177 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -20337,7 +20411,7 @@
 	exports.default = {};
 
 /***/ },
-/* 177 */
+/* 178 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

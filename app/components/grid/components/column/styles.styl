@@ -2,6 +2,7 @@
 @import '../../mixins.styl'
 
 .column
+  position relative
   float left
   width 100%
   min-height 1px // Prevent columns from collapsing when empty
@@ -19,3 +20,13 @@
 .flush
 	padding-left 0
 	padding-right 0
+
+// @TODO Auto generate
+.column4
+  make-grid-pattern(3, true)
+
+.column2
+  make-grid-pattern(6, true)
+
+.column3
+  make-grid-pattern(4, true)

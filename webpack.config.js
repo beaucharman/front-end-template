@@ -4,11 +4,12 @@ var path = require('path')
 module.exports = {
   entry: './app/entry.jsx',
   output: {
-    filename: './static/bundle.js',
+    path: './static/',
+    filename: 'bundle.js',
     publicPath: '/',
   },
   plugins: [
-    new ExtractTextPlugin('./static/app.css', {
+    new ExtractTextPlugin('app.css', {
       allChunks: true,
     })
   ],
@@ -28,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg)$/,
-        loader: 'url-loader?name=[name].[ext]&limit=8192&path=static',
+        loader: 'url-loader?name=assets/images/[name].[ext]?[hash]&limit=8192',
       },
     ]
   },

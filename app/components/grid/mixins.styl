@@ -3,10 +3,10 @@
 percentage($decimal)
   ($decimal * 100) %
 
-breakpoint($point = $grid-float-breakpoint, $condition = min-width)
-  @media screen and ($condition: $point) {block}
+breakpoint($point = $grid-float-breakpoint)
+  @media screen and (min-width: $point) {block}
 
-grid-pattern($grid-pattern, $auto-collapse = false, $breakpoint = $grid-float-breakpoint, $layout = $grid-column-count)
+make-grid-pattern($grid-pattern, $auto-collapse = false, $breakpoint = $grid-float-breakpoint, $layout = $grid-column-count)
   // Calculate width based on number of columns available
   if $auto-collapse
     +breakpoint($breakpoint)
