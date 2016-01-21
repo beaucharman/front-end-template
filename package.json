@@ -4,7 +4,7 @@
   "description": "A front end template build with React, Stylus, Webpack and Babel",
   "main": "index.js",
   "scripts": {
-    "test": "test": "mocha --harmony",
+    "test": "mocha --harmony",
     "start": "node --harmony server.js",
     "build": "webpack",
     "dev": "webpack -w"
@@ -25,11 +25,11 @@
     "file-loader": "^0.8.5",
     "mocha": "^2.3.4",
     "nib": "^1.1.0",
-    "normalize.css": "^3.0.3",
-    "require-directory": "^2.1.1",
+    "react-a11y": "^0.2.8",
     "rupture": "^0.6.1",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.11"
   }
 }
