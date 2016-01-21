@@ -24,7 +24,7 @@ module.exports = {
       },
       {
         test: /\.styl$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&localIdentName=[name]---[local]---[hash:base64:5]!stylus-loader'),
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&localIdentName=[path][name]---[local]---[hash:base64:5]!stylus-loader'),
       },
       {
         test: /\.(png|jpg)$/,
